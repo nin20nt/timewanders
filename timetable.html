@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <link rel="icon" type="image/png" href="calendar (1).png">
+    <link rel="stylesheet" href="timetable.css">
+</head>
+<body>
+    <div class="container">
+        <button id="logoutBtn" class="btn btn-logout">
+            <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"/>
+            </svg>
+            Logout
+        </button>
+        <h1>Wandering Circus Timetable</h1>
+
+        <!-- View Mode Toggle -->
+        <div class="view-toggle">
+            <button id="studentViewBtn" class="btn btn-primary">
+                <svg class="icon" fill="currentColor" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                View by Student
+            </button>
+            <button id="periodViewBtn" class="btn btn-secondary">
+                <svg class="icon" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 6v6l4 2"/></svg>
+                View by Period
+            </button>
+        </div>
+
+        <!-- Week Selector -->
+        <div class="week-selector">
+            <button id="weekABtn" class="week-btn active">Week A</button>
+            <button id="weekBBtn" class="week-btn">Week B</button>
+        </div>
+
+        <!-- Student View Container -->
+        <div id="studentView">
+            <div class="card">
+                <div class="student-view-selector">
+                    <div class="form-group">
+                        <label for="studentSelect">Select Student:</label>
+                        <select id="studentSelect"></select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 id="studentViewTitle" class="timetable-title"></h2>
+                <div class="overflow-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Period</th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                            </tr>
+                        </thead>
+                        <tbody id="timetableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Period View Container -->
+        <div id="periodView" style="display: none;">
+            <div class="card">
+                <div class="period-view-selectors">
+                    <div class="form-group">
+                        <label for="daySelect">Select Day:</label>
+                        <select id="daySelect">
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="periodSelect">Select Period:</label>
+                        <select id="periodSelect"></select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 id="periodViewTitle" class="timetable-title"></h2>
+                <div id="studentsList" class="students-grid"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="timetable.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #87ceeb 0%, #b3d9f2 100%);
+    min-height: 100vh;
+    padding: 1rem 2rem;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.view-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.btn {
+    padding: 0.5rem 1.25rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.btn-primary {
+    background: white;
+    color: #5dade2;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.btn-secondary {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+.btn-secondary:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.week-selector {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.week-btn {
+    padding: 0.4rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.week-btn.active {
+    background: #3498db;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.week-btn:not(.active) {
+    background: white;
+    color: #5dade2;
+}
+
+.week-btn:not(.active):hover {
+    background: #f0f0f0;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    margin-bottom: 2rem;
+}
+
+.card:has(.form-group:only-child) {
+    padding: 1rem 2rem;
+}
+
+.form-group {
+    margin-bottom: 0.75rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+select {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+select:focus {
+    outline: none;
+    border-color: #5dade2;
+}
+
+.timetable-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+    table-layout: fixed;
+}
+
+th {
+    background: linear-gradient(135deg, #87ceeb 0%, #b3d9f2 100%);
+    color: white;
+    padding: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.2);
+    width: 18%;
+}
+
+th:first-child {
+    width: 10%;
+}
+
+td {
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    min-height: 100px;
+    vertical-align: top;
+    width: 18%;
+}
+
+td:first-child {
+    width: 10%;
+}
+
+td.period-label {
+    background: #f5f5f5;
+    font-weight: 600;
+    text-align: center;
+    color: #5dade2;
+}
+
+td.no-class {
+    background: #f0f0f0;
+    text-align: center;
+    color: #999;
+    vertical-align: middle;
+}
+
+/* Subject-specific background colors */
+td[data-subject*="maths advanced"],
+td[data-subject*="maths extension"] {
+    background: #fcbbbb;
+}
+
+td[data-subject*="va"] {
+    background: #ffbbdb;
+}
+
+td[data-subject*="music"] {
+    background: #fcbbf4;
+}
+
+td[data-subject*="textiles"] {
+    background: #e9bbfc;
+}
+
+td[data-subject*="food technology"] {
+    background: #c9bbfc;
+}
+
+td[data-subject*="chemistry"] {
+    background: #bbd2fc;
+}
+
+td[data-subject*="physics"] {
+    background: #b7f5ed;
+}
+
+td[data-subject*="biology"] {
+    background: #bbf5bc;
+}
+
+td[data-subject*="english advanced"] {
+    background: #feffc2;
+}
+
+td[data-subject*="english extension"] {
+    background: #fce0bb;
+}
+
+td[data-subject*="accelerated geography"] {
+    background: #dafbdb;
+}
+
+td[data-subject*="economics"] {
+    background: #7cd3c3;
+}
+
+td[data-subject*="legal studies"] {
+    background: #8eaeeb;
+}
+
+td[data-subject*="accelerated software engineering"] {
+    background: #d1d5dd;
+}
+
+td[data-subject*="modern history"] {
+    background: #ede2d8;
+}
+
+.class-info {
+    font-size: 0.9rem;
+}
+
+.class-subject {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.class-code {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+.class-teacher {
+    color: #555;
+    margin-bottom: 0.25rem;
+}
+
+.class-room {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.student-view-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.student-view-selector .form-group {
+    margin-bottom: 0;
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.student-view-selector label {
+    display: inline-block;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+.student-view-selector select {
+    max-width: 300px;
+    margin: 0;
+    width: auto;
+    flex: 0 1 auto;
+}
+
+.period-view-selectors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.period-view-selectors .form-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0;
+}
+
+.period-view-selectors label {
+    display: inline-block;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+.period-view-selectors select {
+    width: auto;
+    flex: 1 1 auto;
+    margin: 0;
+}
+
+.card:has(.period-view-selectors),
+.card:has(.student-view-selector) {
+    padding: 1rem 2rem;
+}
+
+.students-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    grid-template-rows: repeat(2, minmax(0, auto));
+    align-items: start;
+}
+
+.student-card {
+    border-radius: 10px;
+    padding: 1.5rem;
+    border: 2px solid #5dade2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.student-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(93, 173, 226, 0.3);
+}
+
+/* Subject-specific background colors for student cards */
+.student-card[data-subject*="maths advanced"],
+.student-card[data-subject*="maths extension"] {
+    background: #fcbbbb;
+}
+
+.student-card[data-subject*="va"] {
+    background: #ffbbdb;
+}
+
+.student-card[data-subject*="music"] {
+    background: #fcbbf4;
+}
+
+.student-card[data-subject*="textiles"] {
+    background: #e9bbfc;
+}
+
+.student-card[data-subject*="food technology"] {
+    background: #c9bbfc;
+}
+
+.student-card[data-subject*="chemistry"] {
+    background: #bbd2fc;
+}
+
+.student-card[data-subject*="physics"] {
+    background: #b7f5ed;
+}
+
+.student-card[data-subject*="biology"] {
+    background: #bbf5bc;
+}
+
+.student-card[data-subject*="english advanced"] {
+    background: #feffc2;
+}
+
+.student-card[data-subject*="english extension"] {
+    background: #fce0bb;
+}
+
+.student-card[data-subject*="accelerated geography"] {
+    background: #dafbdb;
+}
+
+.student-card[data-subject*="economics"] {
+    background: #7cd3c3;
+}
+
+.student-card[data-subject*="legal studies"] {
+    background: #8eaeeb;
+}
+
+.student-card[data-subject*="accelerated software engineering"] {
+    background: #d1d5dd;
+}
+
+.student-card[data-subject*="modern history"] {
+    background: #ede2d8;
+}
+
+.student-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.student-class-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.overflow-container {
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .view-toggle {
+        flex-direction: column;
+    }
+
+    .period-view-selectors {
+        grid-template-columns: 1fr;
+    }
+
+    .students-grid {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    th, td {
+        padding: 0.5rem;
+    }
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+#studentView, #periodView {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.image-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white !important;
+    padding: 0;
+    overflow: hidden;
+    order: 10;
+    height: fit-content;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.btn-logout {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    color: #e74c3c;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.btn-logout:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+.container {
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .btn-logout {
+        top: 0.5rem;
+        right: 1rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}

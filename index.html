@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/png" href="calendar (1).png">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <h1>School Timetable</h1>
+            <p class="subtitle">Please enter password to continue</p>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <input 
+                        type="password" 
+                        id="passwordInput" 
+                        placeholder="Enter password"
+                        autocomplete="off"
+                        required
+                    >
+                </div>
+                
+                <div id="errorMessage" class="error-message"></div>
+                
+                <button type="submit" class="login-btn">Enter</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
