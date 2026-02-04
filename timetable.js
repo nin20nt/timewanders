@@ -558,6 +558,16 @@ function getCurrentPeriod() {
     if (!todaySchedule) {
         return '0';
     }
+
+    // Check if we are currently inside a period
+    for (let period of periods) {
+        const schedule = todaySchedule[period];
+        if (!schedule) continue;
+
+        if (currentTime >= schedule.start && currentTime < schedule.end) {
+            return period; // currently in this period
+        }
+    }
     
     // Find the next period that starts after current time
     for (let period of periods) {
