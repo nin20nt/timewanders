@@ -29,7 +29,7 @@ const timetableData = {
     'Emily': {
         A: {
             Monday: {
-                '1': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '208' },
+                '1': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' },
                 '2': { subject: 'Biology', class: '11BIOC', teacher: 'C. Yu', room: '404' },
                 '3': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
                 '4': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '101' }
@@ -50,19 +50,19 @@ const timetableData = {
                 '1': { subject: 'Food Technology', class: '11FTD', teacher: 'R. Robinson', room: '314' },
                 '2': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '206' },
                 '3': { subject: 'Maths Advanced', class: '11MA2UK', teacher: 'K. Murray', room: '305' },
-                '4': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '208' }
+                '4': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' }
             },
             Friday: {
                 '1': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '2': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '215' },
-                '3': { subject: 'Building Strength', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo' },
-                '4': { subject: 'Maths Advanced', class: '11MA2UK', teacher: 'K. Murray', room: '305' }
+                '2': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' },
+                '3': { subject: 'Maths Advanced', class: '11MA2UK', teacher: 'K. Murray', room: '305'  },
+                '4': { subject: 'Building Strength', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo' }
             }
         },
         B: {
             Monday: {
                 '1': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '2': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '208' },
+                '2': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' },
                 '3': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' },
                 '4': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '101' }
             },
@@ -76,7 +76,7 @@ const timetableData = {
                 '1': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
                 '2': { subject: 'Maths Advanced', class: '11MA2UK', teacher: 'K. Murray', room: '305' },
                 '3': { subject: 'Food Technology', class: '11FTD', teacher: 'R. Robinson', room: '317' },
-                '4': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '208' }
+                '4': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' }
             },
             Thursday: {
                 '1': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '206' },
@@ -85,7 +85,7 @@ const timetableData = {
                 '4': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' }
             },
             Friday: {
-                '1': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '208' },
+                '1': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' },
                 '2': { subject: 'Maths Advanced', class: '11MA2UK', teacher: 'K. Murray', room: '305' },
                 '3': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' },
                 '4': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' }
@@ -121,8 +121,8 @@ const timetableData = {
             Friday: {
                 '1': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
                 '2': { subject: 'English Advanced', class: '11ENKC', teacher: 'A. Bhattacharya', room: '202' },
-                '3': { subject: 'Building Strength', class: '11SBU1', teacher: 'K. Moss, I. Pozzolungo' },
-                '4': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' }
+                '3': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
+                '4': { subject: 'Building Strength', class: '11SBU1', teacher: 'K. Moss, I. Pozzolungo' }
             }
         },
         B: {
@@ -187,8 +187,8 @@ const timetableData = {
             Friday: {
                 '1': { subject: 'Biology', class: '11BIOF', teacher: 'J. Tulett', room: '403' },
                 '2': { subject: 'English Advanced', class: '11ENKC', teacher: 'A. Bhattacharya', room: '202' },
-                '3': { subject: 'Building Strength', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo' },
-                '4': { subject: 'Maths Adv + Ext', class: '11MAT', teacher: 'A. Tourikis', room: '303' }
+                '3': { subject: 'Maths Adv + Ext', class: '11MAT', teacher: 'A. Tourikis', room: '303' },
+                '4': { subject: 'Building Strength', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo' }
             }
         },
         B: {
@@ -253,8 +253,8 @@ const timetableData = {
             Friday: {
                 '1': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
                 '2': { subject: 'English Advanced', class: '11ENKB', teacher: 'M. Shonoda', room: '201' },
-                '3': { subject: 'Building Strength', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo' },
-                '4': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304' }
+                '3': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304' },
+                '4': { subject: 'Building Strength', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo' }
             }
         },
         B: {
@@ -319,8 +319,8 @@ const timetableData = {
             Friday: {
                 '1': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
                 '2': { subject: 'English Advanced', class: '11ENKB', teacher: 'M. Shonoda', room: '201' },
-                '3': { subject: 'Building Strength', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo' },
-                '4': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' }
+                '3': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
+                '4': { subject: 'Building Strength', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo' }
             }
         },
         B: {
@@ -385,8 +385,8 @@ const timetableData = {
             Friday: {
                 '1': { subject: 'Legal Studies', class: '11LSF', teacher: 'M. Harkin', room: '309' },
                 '2': { subject: 'English Advanced', class: '11ENKE', teacher: 'M. Carroll', room: '311' },
-                '3': { subject: 'Building Strength', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo'  },
-                '4': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304' }
+                '3': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304'  },
+                '4': { subject: 'Building Strength', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo' }
             }
         },
         B: {
@@ -425,7 +425,7 @@ const timetableData = {
     'Nina': {
         A: {
             Monday: {
-                '1': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '208' },
+                '1': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' },
                 '2': { subject: 'Biology', class: '11BIOC', teacher: 'C. Yu', room: '404' },
                 '3': { subject: 'Physics', class: '11PHYF', teacher: 'R. Barr', room: '103' },
                 '4': { subject: 'Chemistry', class: '11CHEME', teacher: 'J. Jeong', room: '401' }
@@ -446,19 +446,19 @@ const timetableData = {
                 '1': { subject: 'HSC Software Engineering', class: '11AccSED', teacher: 'G. Horan', room: '212' },
                 '2': { subject: 'Chemistry', class: '11CHEME', teacher: 'J. Jeong', room: '401' },
                 '3': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
-                '4': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '208' }
+                '4': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' }
             },
             Friday: {
                 '1': { subject: 'Physics', class: '11PHYF', teacher: 'R. Barr', room: '103' },
-                '2': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '215' },
-                '3': { subject: 'Building Strength', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo' },
-                '4': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' }
+                '2': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' },
+                '3': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
+                '4': { subject: 'Building Strength', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo' }
             }
         },
         B: {
             Monday: {
                 '1': { subject: 'Physics', class: '11PHYF', teacher: 'R. Barr', room: '103' },
-                '2': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '208' },
+                '2': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' },
                 '3': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' },
                 '4': { subject: 'Chemistry', class: '11CHEME', teacher: 'J. Jeong', room: '401' }
             },
@@ -472,7 +472,7 @@ const timetableData = {
                 '1': { subject: 'Maths Extension 1', class: '11MAEG', teacher: 'K. Guan', room: '301' },
                 '2': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
                 '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
-                '4': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '208' }
+                '4': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' }
             },
             Thursday: {
                 '1': { subject: 'Chemistry', class: '11CHEME', teacher: 'J. Jeong', room: '401' },
@@ -481,7 +481,7 @@ const timetableData = {
                 '4': { subject: 'Maths Extension 1', class: '11MAEG', teacher: 'K. Guan', room: '301' }
             },
             Friday: {
-                '1': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '208' },
+                '1': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' },
                 '2': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
                 '3': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' },
                 '4': { subject: 'Physics', class: '11PHYF', teacher: 'R. Barr', room: '103' }
