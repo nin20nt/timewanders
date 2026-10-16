@@ -8,19 +8,19 @@ const subjectColors = {
     'Maths Advanced': '#fcbbbb',
     'Maths Adv + Ext': '#fcbbbb',
     'Maths Extension 1': '#fcbbbb',
+    'Maths Extension 2': '#fcbbbb',
     'Visual Arts': '#ffbbdb',
     'Music 2': '#fcbbf4',
+    'Music Extension': '#fcbbf4',
     'Textiles and Design': '#e9bbfc',
-    'Food Technology': '#c9bbfc',
     'Chemistry': '#bbd2fc',
     'Physics': '#b7f5ed',
     'Biology': '#bbf5bc',
     'English Advanced': '#feffc2',
     'English Extension': '#fce0bb',
-    'Geography Accelerated': '#dafbdb',
+    'English Extension 2': '#fce0bb',
     'Economics': '#7cd3c3',
     'Legal Studies': '#8eaeeb',
-    'HSC Software Engineering': '#d1d5dd',
     'Modern History': '#ede2d8'
 };
 
@@ -29,298 +29,291 @@ const timetableData = {
     'Emily': {
         A: {
             Monday: {
-                '1': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' },
-                '2': { subject: 'Biology', class: '11BIOC', teacher: 'C. Yu', room: '404' },
-                '3': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '4': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '101' }
+                '1': { subject: 'English Advanced', class: '12ENKD', teacher: 'J. Leonard', room: '208' },
+                '2': { subject: 'Biology', class: '12BIOC', teacher: 'M. Allen-Scott', room: '404' },
+                '3': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' },
+                '4': { subject: 'Music 2', class: '12MUS2E', teacher: 'C. Mok', room: '101' }
             },
             Tuesday: {
-                '1': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '2': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' },
-                '3': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '206' },
-                '4': { subject: 'Food Technology', class: '11FTD', teacher: 'M. Bloomfield', room: '317' }
+                '1': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' },
+                '2': { subject: 'Biology', class: '12BIOC', teacher: 'M. Allen-Scott', room: '404' },
+                '3': { subject: 'Music 2', class: '12MUS2E', teacher: 'C. Mok', room: '206' },
+                '4': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' }
             },
             Wednesday: {
                 '1': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
-                '2': { subject: 'Maths Advanced', class: '11MA2UK', teacher: 'K. Murray', room: '305' },
-                '3': { subject: 'Food Technology', class: '11FTD', teacher: 'M. Bloomfield', room: '317' },
-                '4': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' }
+                '2': { subject: 'Maths Advanced', class: '12MA2UK', teacher: 'K. Murray', room: '305' },
+                '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
+                '4': { subject: 'Biology', class: '12BIOC', teacher: 'M. Allen-Scott', room: '404' }
             },
             Thursday: {
-                '1': { subject: 'Food Technology', class: '11FTD', teacher: 'R. Robinson', room: '314' },
-                '2': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '206' },
-                '3': { subject: 'Maths Advanced', class: '11MA2UK', teacher: 'K. Murray', room: '305' },
-                '4': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' }
+                '1': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
+                '2': { subject: 'Music 2', class: '12MUS2E', teacher: 'C. Mok', room: '206' },
+                '3': { subject: 'Maths Advanced', class: '12MA2UK', teacher: 'K. Murray', room: '305' },
+                '4': { subject: 'English Advanced', class: '12ENKD', teacher: 'J. Leonard', room: '208' }
             },
             Friday: {
-                '1': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '2': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' },
-                '3': { subject: 'Maths Advanced', class: '11MA2UK', teacher: 'K. Murray', room: '305'  },
-                '4': { subject: 'Building Strength', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo' }
+                '1': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' },
+                '2': { subject: 'English Advanced', class: '12ENKD', teacher: 'J. Leonard', room: '216' },
+                '3': { subject: 'Maths Advanced', class: '12MA2UK', teacher: 'K. Murray', room: '305'  },
+                '4': { subject: 'Music Extension', teacher: 'S. Sutcliffe', room: '206' }
             }
         },
         B: {
             Monday: {
-                '1': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '2': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' },
-                '3': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' },
-                '4': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '101' }
+                '1': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' },
+                '2': { subject: 'English Advanced', class: '12ENKD', teacher: 'J. Leonard', room: '208' },
+                '3': { subject: 'Biology', class: '12BIOC', teacher: 'M. Allen-Scott', room: '404' },
+                '4': { subject: 'Music 2', class: '12MUS2E', teacher: 'C. Mok', room: '101' }
             },
             Tuesday: {
-                '1': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' },
-                '2': { subject: 'Maths Advanced', class: '11MA2UK', teacher: 'K. Murray', room: '305' },
-                '3': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '101' },
-                '4': { subject: 'Food Technology', class: '11FTD', teacher: 'M. Bloomfield', room: '314' }
+                '1': { subject: 'Biology', class: '12BIOC', teacher: 'M. Allen-Scott', room: '404' },
+                '2': { subject: 'Maths Advanced', class: '12MA2UK', teacher: 'K. Murray', room: '305' },
+                '3': { subject: 'Music 2', class: '12MUS2E', teacher: 'C. Mok', room: '101' },
+                '4': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' }
             },
             Wednesday: {
                 '1': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
-                '2': { subject: 'Maths Advanced', class: '11MA2UK', teacher: 'K. Murray', room: '305' },
-                '3': { subject: 'Food Technology', class: '11FTD', teacher: 'R. Robinson', room: '317' },
-                '4': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' }
+                '2': { subject: 'Maths Advanced', class: '12MA2UK', teacher: 'K. Murray', room: '305' },
+                '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
+                '4': { subject: 'English Advanced', class: '12ENKD', teacher: 'J. Leonard', room: '208' }
             },
             Thursday: {
-                '1': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '206' },
-                '2': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '3': { subject: 'Food Technology', class: '11FTD', teacher: 'D. McClure', room: '314' },
+                '1': { subject: 'Music 2', class: '12MUS2E', teacher: 'C. Mok', room: '206' },
+                '2': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' },
+                '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
                 '4': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' }
             },
             Friday: {
-                '1': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' },
-                '2': { subject: 'Maths Advanced', class: '11MA2UK', teacher: 'K. Murray', room: '305' },
-                '3': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' },
-                '4': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' }
+                '1': { subject: 'English Advanced', class: '12ENKD', teacher: 'J. Leonard', room: '208' },
+                '2': { subject: 'Maths Advanced', class: '12MA2UK', teacher: 'K. Murray', room: '305' },
+                '3': { subject: 'Biology', class: '12BIOC', teacher: 'M. Allen-Scott', room: '404' },
+                '4': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' }
             }
         }
     },
     'Erica': {
         A: {
             Monday: {
-                '1': { subject: 'English Advanced', class: '11ENKC', teacher: 'A. Bhattacharya', room: '202' },
-                '2': { subject: 'Economics', class: '11ECOC', teacher: 'S. Boden', room: '208' },
-                '3': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '4': { subject: 'Visual Arts', class: '11VAE', teacher: 'I. Farnon', room: 'VA4' }
+                '1': { subject: 'English Advanced', class: '12ENKC', teacher: 'A. Bhattacharya', room: '202' },
+                '2': { subject: 'Economics', class: '12ECOC', teacher: 'S. Boden', room: '208' },
+                '3': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' },
+                '4': { subject: 'Visual Arts', class: '12VAE', teacher: 'I. Farnon', room: 'VA4' }
             },
             Tuesday: {
-                '1': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '2': { subject: 'Economics', class: '11ECOC', teacher: 'S. Boden', room: '208' },
-                '3': { subject: 'Visual Arts', class: '11VAE', teacher: 'I. Farnon', room: 'VA4' },
-                '4': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' }
+                '1': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' },
+                '2': { subject: 'Economics', class: '12ECOC', teacher: 'S. Boden', room: '208' },
+                '3': { subject: 'Visual Arts', class: '12VAE', teacher: 'I. Farnon', room: 'VA4' }
             },
             Wednesday: {
-                '1': { subject: 'Maths Extension 1', class: '11MAEG', teacher: 'K. Guan', room: '301' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
-                '3': { subject: 'English Extension', class: '11ENEXD', teacher: 'M. Carroll', room: '311' },
-                '4': { subject: 'Economics', class: '11ECOC', teacher: 'S. Boden', room: '208' }
+                '2': { subject: 'Maths Advanced', class: '12MA2UK', teacher: 'K. Murray', room: '305' },
+                '3': { subject: 'English Extension', class: '12ENEXD', teacher: 'M. Carroll', room: '311' },
+                '4': { subject: 'Economics', class: '12ECOC', teacher: 'S. Boden', room: '208' }
             },
             Thursday: {
-                '1': { subject: 'English Extension', class: '11ENEXD', teacher: 'M. Carroll', room: '311' },
-                '2': { subject: 'Visual Arts', class: '11VAE', teacher: 'I. Farnon', room: 'VA4' },
-                '3': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
-                '4': { subject: 'English Advanced', class: '11ENKC', teacher: 'A. Bhattacharya', room: '202' }
+                '1': { subject: 'English Extension', class: '12ENEXD', teacher: 'M. Carroll', room: '311' },
+                '2': { subject: 'Visual Arts', class: '12VAE', teacher: 'I. Farnon', room: 'VA4' },
+                '3': { subject: 'Maths Advanced', class: '12MA2UK', teacher: 'K. Murray', room: '305' },
+                '4': { subject: 'English Advanced', class: '12ENKC', teacher: 'A. Bhattacharya', room: '202' }
             },
             Friday: {
-                '1': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '2': { subject: 'English Advanced', class: '11ENKC', teacher: 'A. Bhattacharya', room: '202' },
-                '3': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
-                '4': { subject: 'Building Strength', class: '11SBU1', teacher: 'K. Moss, I. Pozzolungo' }
+                '1': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' },
+                '2': { subject: 'English Advanced', class: '12ENKC', teacher: 'A. Bhattacharya', room: '202' },
+                '3': { subject: 'Maths Advanced', class: '12MA2UK', teacher: 'K. Murray', room: '305' }
             }
         },
         B: {
             Monday: {
-                '1': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '2': { subject: 'English Advanced', class: '11ENKC', teacher: 'A. Bhattacharya', room: '202' },
-                '3': { subject: 'Economics', class: '11ECOC', teacher: 'S. Boden', room: '208' },
-                '4': { subject: 'Visual Arts', class: '11VAE', teacher: 'I. Farnon', room: 'VA4' }
+                '1': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' },
+                '2': { subject: 'English Advanced', class: '12ENKC', teacher: 'A. Bhattacharya', room: '202' },
+                '3': { subject: 'Economics', class: '12ECOC', teacher: 'S. Boden', room: '208' },
+                '4': { subject: 'Visual Arts', class: '12VAE', teacher: 'I. Farnon', room: 'VA4' }
             },
             Tuesday: {
-                '1': { subject: 'Economics', class: '11ECOC', teacher: 'S. Boden', room: '208' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
-                '3': { subject: 'Visual Arts', class: '11VAE', teacher: 'I. Farnon', room: 'VA4' },
-                '4': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' }
+                '1': { subject: 'Economics', class: '12ECOC', teacher: 'S. Boden', room: '208' },
+                '2': { subject: 'Maths Advanced', class: '12MA2UK', teacher: 'K. Murray', room: '305' },
+                '3': { subject: 'Visual Arts', class: '12VAE', teacher: 'I. Farnon', room: 'VA4' }
             },
             Wednesday: {
-                '1': { subject: 'Maths Extension 1', class: '11MAEG', teacher: 'K. Guan', room: '301' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
+                '2': { subject: 'Maths Advanced', class: '12MA2UK', teacher: 'K. Murray', room: '305' },
                 '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
-                '4': { subject: 'English Advanced', class: '11ENKC', teacher: 'A. Bhattacharya', room: '202' }
+                '4': { subject: 'English Advanced', class: '12ENKC', teacher: 'A. Bhattacharya', room: '202' }
             },
             Thursday: {
-                '1': { subject: 'Visual Arts', class: '11VAE', teacher: 'I. Farnon', room: 'VA4' },
-                '2': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '3': { subject: 'English Extension', class: '11ENEXD', teacher: 'M. Carroll', room: '311' },
-                '4': { subject: 'Maths Extension 1', class: '11MAEG', teacher: 'K. Guan', room: '301' }
+                '1': { subject: 'Visual Arts', class: '12VAE', teacher: 'I. Farnon', room: 'VA4' },
+                '2': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' },
+                '3': { subject: 'English Extension', class: '12ENEXD', teacher: 'M. Carroll', room: '311' }
             },
             Friday: {
-                '1': { subject: 'English Advanced', class: '11ENKC', teacher: 'A. Bhattacharya', room: '202' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
-                '3': { subject: 'Economics', class: '11ECOC', teacher: 'S. Boden', room: '208' },
-                '4': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' }
+                '1': { subject: 'English Advanced', class: '12ENKC', teacher: 'A. Bhattacharya', room: '202' },
+                '2': { subject: 'Maths Advanced', class: '12MA2UK', teacher: 'K. Murray', room: '305' },
+                '3': { subject: 'Economics', class: '12ECOC', teacher: 'S. Boden', room: '208' },
+                '4': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' }
             }
         }
     },
     'Yuju': {
         A: {
             Monday: {
-                '1': { subject: 'English Advanced', class: '11ENKC', teacher: 'A. Bhattacharya', room: '202' },
-                '2': { subject: 'Modern History', class: '11MHC2', teacher: 'A. Brennan', room: '307' },
-                '3': { subject: 'Biology', class: '11BIOF', teacher: 'J. Tulett', room: '403' },
-                '4': { subject: 'Visual Arts', class: '11VAE', teacher: 'I. Farnon', room: 'VA4' }
+                '1': { subject: 'English Advanced', class: '12ENKC', teacher: 'A. Bhattacharya', room: '202' },
+                '2': { subject: 'Modern History', class: '12MHC2', teacher: 'A. Brennan', room: '307' },
+                '3': { subject: 'Biology', class: '12BIOF', teacher: 'J. Tulett', room: '403' },
+                '4': { subject: 'Visual Arts', class: '12VAE', teacher: 'I. Farnon', room: 'VA4' }
             },
             Tuesday: {
-                '1': { subject: 'Biology', class: '11BIOF', teacher: 'J. Tulett', room: '403' },
-                '2': { subject: 'Modern History', class: '11MHC2', teacher: 'A. Brennan', room: '307' },
-                '3': { subject: 'Visual Arts', class: '11VAE', teacher: 'I. Farnon', room: 'VA4' },
-                '4': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' }
+                '1': { subject: 'Biology', class: '12BIOF', teacher: 'J. Tulett', room: '403' },
+                '2': { subject: 'Modern History', class: '12MHC2', teacher: 'A. Brennan', room: '307' },
+                '3': { subject: 'Visual Arts', class: '12VAE', teacher: 'I. Farnon', room: 'VA4' }
             },
             Wednesday: {
-                '1': { subject: 'Maths Extension 1', class: '11MAET', teacher: 'A. Tourikis', room: '303' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAT', teacher: 'A. Tourikis', room: '303' },
-                '3': { subject: 'English Extension', class: '11ENEXD', teacher: 'M. Carroll', room: '311' },
-                '4': { subject: 'Modern History', class: '11MHC2', teacher: 'A. Brennan', room: '307' }
+                '1': { subject: 'Maths Extension 1', class: '12MAET', teacher: 'A. Tourikis', room: '303' },
+                '2': { subject: 'Maths Adv + Ext', class: '12MAT', teacher: 'A. Tourikis', room: '303' },
+                '3': { subject: 'English Extension', class: '12ENEXD', teacher: 'M. Carroll', room: '311' },
+                '4': { subject: 'Modern History', class: '12MHC2', teacher: 'A. Brennan', room: '307' }
             },
             Thursday: {
-                '1': { subject: 'English Extension', class: '11ENEXD', teacher: 'M. Carroll', room: '311' },
-                '2': { subject: 'Visual Arts', class: '11VAE', teacher: 'I. Farnon', room: 'VA4' },
-                '3': { subject: 'Maths Adv + Ext', class: '11MAT', teacher: 'A. Tourikis', room: '303' },
-                '4': { subject: 'English Advanced', class: '11ENKC', teacher: 'A. Bhattacharya', room: '202' }
+                '1': { subject: 'English Extension', class: '12ENEXD', teacher: 'M. Carroll', room: '311' },
+                '2': { subject: 'Visual Arts', class: '12VAE', teacher: 'I. Farnon', room: 'VA4' },
+                '3': { subject: 'Maths Adv + Ext', class: '12MAT', teacher: 'A. Tourikis', room: '303' },
+                '4': { subject: 'English Advanced', class: '12ENKC', teacher: 'A. Bhattacharya', room: '202' }
             },
             Friday: {
-                '1': { subject: 'Biology', class: '11BIOF', teacher: 'J. Tulett', room: '403' },
-                '2': { subject: 'English Advanced', class: '11ENKC', teacher: 'A. Bhattacharya', room: '202' },
-                '3': { subject: 'Maths Adv + Ext', class: '11MAT', teacher: 'A. Tourikis', room: '303' },
-                '4': { subject: 'Building Strength', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo' }
+                '1': { subject: 'Biology', class: '12BIOF', teacher: 'J. Tulett', room: '403' },
+                '2': { subject: 'English Advanced', class: '12ENKC', teacher: 'A. Bhattacharya', room: '202' },
+                '3': { subject: 'Maths Adv + Ext', class: '12MAT', teacher: 'A. Tourikis', room: '303' }
             }
         },
         B: {
             Monday: {
-                '1': { subject: 'Biology', class: '11BIOF', teacher: 'J. Tulett', room: '403' },
-                '2': { subject: 'English Advanced', class: '11ENKC', teacher: 'A. Bhattacharya', room: '202' },
-                '3': { subject: 'Modern History', class: '11MHC2', teacher: 'A. Brennan', room: '307' },
-                '4': { subject: 'Visual Arts', class: '11VAE', teacher: 'I. Farnon', room: 'VA4' }
+                '1': { subject: 'Biology', class: '12BIOF', teacher: 'J. Tulett', room: '403' },
+                '2': { subject: 'English Advanced', class: '12ENKC', teacher: 'A. Bhattacharya', room: '202' },
+                '3': { subject: 'Modern History', class: '12MHC2', teacher: 'A. Brennan', room: '307' },
+                '4': { subject: 'Visual Arts', class: '12VAE', teacher: 'I. Farnon', room: 'VA4' }
             },
             Tuesday: {
-                '1': { subject: 'Modern History', class: '11MHC2', teacher: 'A. Brennan', room: '307' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAT', teacher: 'A. Tourikis', room: '303' },
-                '3': { subject: 'Visual Arts', class: '11VAE', teacher: 'I. Farnon', room: 'VA4' },
-                '4': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' }
+                '1': { subject: 'Modern History', class: '12MHC2', teacher: 'A. Brennan', room: '307' },
+                '2': { subject: 'Maths Adv + Ext', class: '12MAT', teacher: 'A. Tourikis', room: '303' },
+                '3': { subject: 'Visual Arts', class: '12VAE', teacher: 'I. Farnon', room: 'VA4' }
             },
             Wednesday: {
-                '1': { subject: 'Maths Extension 1', class: '11MAET', teacher: 'A. Tourikis', room: '303' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAT', teacher: 'A. Tourikis', room: '303' },
+                '1': { subject: 'Maths Extension 1', class: '12MAET', teacher: 'A. Tourikis', room: '303' },
+                '2': { subject: 'Maths Adv + Ext', class: '12MAT', teacher: 'A. Tourikis', room: '303' },
                 '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
-                '4': { subject: 'English Advanced', class: '11ENKC', teacher: 'A. Bhattacharya', room: '202' }
+                '4': { subject: 'English Advanced', class: '12ENKC', teacher: 'A. Bhattacharya', room: '202' }
             },
             Thursday: {
-                '1': { subject: 'Visual Arts', class: '11VAE', teacher: 'I. Farnon', room: 'VA4' },
-                '2': { subject: 'Biology', class: '11BIOF', teacher: 'J. Tulett', room: '403' },
-                '3': { subject: 'English Extension', class: '11ENEXD', teacher: 'M. Carroll', room: '311' },
-                '4': { subject: 'Maths Extension 1', class: '11MAET', teacher: 'A. Tourikis', room: '303' }
+                '1': { subject: 'Visual Arts', class: '12VAE', teacher: 'I. Farnon', room: 'VA4' },
+                '2': { subject: 'Biology', class: '12BIOF', teacher: 'J. Tulett', room: '403' },
+                '3': { subject: 'English Extension', class: '12ENEXD', teacher: 'M. Carroll', room: '311' },
+                '4': { subject: 'Maths Extension 1', class: '12MAET', teacher: 'A. Tourikis', room: '303' }
             },
             Friday: {
-                '1': { subject: 'English Advanced', class: '11ENKC', teacher: 'A. Bhattacharya', room: '202' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAT', teacher: 'A. Tourikis', room: '303' },
-                '3': { subject: 'Modern History', class: '11MHC2', teacher: 'A. Brennan', room: '307' },
-                '4': { subject: 'Biology', class: '11BIOF', teacher: 'J. Tulett', room: '403' }
+                '1': { subject: 'English Advanced', class: '12ENKC', teacher: 'A. Bhattacharya', room: '202' },
+                '2': { subject: 'Maths Adv + Ext', class: '12MAT', teacher: 'A. Tourikis', room: '303' },
+                '3': { subject: 'Modern History', class: '12MHC2', teacher: 'A. Brennan', room: '307' },
+                '4': { subject: 'Biology', class: '12BIOF', teacher: 'J. Tulett', room: '403' }
             }
         }
     },
     'Vanessa': {
         A: {
             Monday: {
-                '1': { subject: 'English Advanced', class: '11ENKB', teacher: 'M. Shonoda', room: '201' },
+                '1': { subject: 'English Advanced', class: '12ENKB', teacher: 'M. Shonoda', room: '201' },
                 '2': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
-                '3': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '4': { subject: 'Textiles and Design', class: '11TEXE', teacher: 'A. Graham', room: '315' }
+                '3': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' },
+                '4': { subject: 'Textiles and Design', class: '12TEXE', teacher: 'A. Graham', room: '315' },
+                '5': { subject: 'Maths Extension 2', class: '12MXXS', teacher: 'L. Sztajer', room: '304' }
             },
             Tuesday: {
-                '1': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
+                '1': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' },
                 '2': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
-                '3': { subject: 'Textiles and Design', class: '11TEXE', teacher: 'A. Graham', room: '315' },
-                '4': { subject: 'Biology', class: '11BIOD', teacher: 'D. Gove', room: '403' }
+                '3': { subject: 'Textiles and Design', class: '12TEXE', teacher: 'A. Graham', room: '315' }
             },
             Wednesday: {
-                '1': { subject: 'Maths Extension 1', class: '11MAES', teacher: 'L. Sztajer', room: '304' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304' },
-                '3': { subject: 'Biology', class: '11BIOD', teacher: 'D. Gove', room: '403' },
-                '4': { subject: 'English Extension', class: '11ENEXC', teacher: 'R. Strauss', room: '211' }
+                '1': { subject: 'Maths Extension 1', class: '12MAES', teacher: 'L. Sztajer', room: '304' },
+                '2': { subject: 'Maths Adv + Ext', class: '12MAS', teacher: 'L. Sztajer', room: '304' },
+                '3': { subject: 'Biology', class: '12BIOD', teacher: 'D. Gove', room: '403' },
+                '4': { subject: 'English Extension', class: '12ENEXC', teacher: 'R. Strauss', room: '211' }
             },
             Thursday: {
-                '1': { subject: 'Biology', class: '11BIOD', teacher: 'D. Gove', room: '403' },
-                '2': { subject: 'Textiles and Design', class: '11TEXE', teacher: 'A. Graham', room: '315' },
-                '3': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304' },
-                '4': { subject: 'English Advanced', class: '11ENKB', teacher: 'M. Shonoda', room: '201' }
+                '1': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
+                '2': { subject: 'Textiles and Design', class: '12TEXE', teacher: 'A. Graham', room: '315' },
+                '3': { subject: 'Maths Adv + Ext', class: '12MAS', teacher: 'L. Sztajer', room: '304' },
+                '4': { subject: 'English Advanced', class: '12ENKB', teacher: 'M. Shonoda', room: '201' }
             },
             Friday: {
-                '1': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '2': { subject: 'English Advanced', class: '11ENKB', teacher: 'M. Shonoda', room: '201' },
-                '3': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304' },
-                '4': { subject: 'Building Strength', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo' }
+                '0': { subject: 'Maths Extension 2', class: '12MXXS', teacher: 'L. Sztajer', room: '304' },
+                '1': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' },
+                '2': { subject: 'English Advanced', class: '12ENKB', teacher: 'M. Shonoda', room: '201' },
+                '3': { subject: 'Maths Adv + Ext', class: '12MAS', teacher: 'L. Sztajer', room: '304' }
             }
         },
         B: {
             Monday: {
-                '1': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '2': { subject: 'English Advanced', class: '11ENKB', teacher: 'M. Shonoda', room: '201' },
-                '3': { subject: 'English Extension', class: '11ENEXC', teacher: 'R. Strauss', room: '211' },
-                '4': { subject: 'Textiles and Design', class: '11TEXE', teacher: 'A. Graham', room: '315' }
+                '1': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' },
+                '2': { subject: 'English Advanced', class: '12ENKB', teacher: 'M. Shonoda', room: '201' },
+                '3': { subject: 'English Extension', class: '12ENEXC', teacher: 'R. Strauss', room: '211' },
+                '4': { subject: 'Textiles and Design', class: '12TEXE', teacher: 'A. Graham', room: '315' },
+                '5': { subject: 'Maths Extension 2', class: '12MXXS', teacher: 'L. Sztajer', room: '304' }
             },
             Tuesday: {
-                '1': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304' },
-                '3': { subject: 'Textiles and Design', class: '11TEXE', teacher: 'A. Graham', room: '315' },
-                '4': { subject: 'Biology', class: '11BIOD', teacher: 'D. Gove', room: '403' }
+                '2': { subject: 'Maths Adv + Ext', class: '12MAS', teacher: 'L. Sztajer', room: '304' },
+                '3': { subject: 'Textiles and Design', class: '12TEXE', teacher: 'A. Graham', room: '315' }
             },
             Wednesday: {
-                '1': { subject: 'Maths Extension 1', class: '11MAES', teacher: 'L. Sztajer', room: '304' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304' },
-                '3': { subject: 'Biology', class: '11BIOD', teacher: 'D. Gove', room: '403' },
-                '4': { subject: 'English Advanced', class: '11ENKB', teacher: 'M. Shonoda', room: '201' }
+                '1': { subject: 'Maths Extension 1', class: '12MAES', teacher: 'L. Sztajer', room: '304' },
+                '2': { subject: 'Maths Adv + Ext', class: '12MAS', teacher: 'L. Sztajer', room: '304' },
+                '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
+                '4': { subject: 'English Advanced', class: '12ENKB', teacher: 'M. Shonoda', room: '201' }
             },
             Thursday: {
-                '1': { subject: 'Textiles and Design', class: '11TEXE', teacher: 'A. Graham', room: '315' },
-                '2': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '3': { subject: 'Biology', class: '11BIOD', teacher: 'D. Gove', room: '403' },
-                '4': { subject: 'Maths Extension 1', class: '11MAES', teacher: 'L. Sztajer', room: '304' }
+                '1': { subject: 'Textiles and Design', class: '12TEXE', teacher: 'A. Graham', room: '315' },
+                '2': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' },
+                '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
+                '4': { subject: 'Maths Extension 1', class: '12MAES', teacher: 'L. Sztajer', room: '304' }
             },
             Friday: {
-                '1': { subject: 'English Advanced', class: '11ENKB', teacher: 'M. Shonoda', room: '201' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304' },
-                '3': { subject: 'English Extension', class: '11ENEXC', teacher: 'R. Strauss', room: '211' },
-                '4': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' }
+                '0': { subject: 'Maths Extension 2', class: '12MXXS', teacher: 'L. Sztajer', room: '304' },
+                '1': { subject: 'English Advanced', class: '12ENKB', teacher: 'M. Shonoda', room: '201' },
+                '2': { subject: 'Maths Adv + Ext', class: '12MAS', teacher: 'L. Sztajer', room: '304' },
+                '3': { subject: 'English Extension', class: '12ENEXC', teacher: 'R. Strauss', room: '211' },
+                '4': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' }
             }
         }
     },
     'Sally': {
         A: {
             Monday: {
-                '1': { subject: 'English Advanced', class: '11ENKB', teacher: 'M. Shonoda', room: '201' },
+                '1': { subject: 'English Advanced', class: '12ENKB', teacher: 'M. Shonoda', room: '201' },
                 '2': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
-                '3': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '4': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '101' }
+                '3': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' },
+                '4': { subject: 'Music 2', class: '12MUS2E', teacher: 'C. Mok', room: '101' }
             },
             Tuesday: {
-                '1': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
+                '0': { subject: 'Maths Extension 2', class: '12MXXM', teacher: 'K. Murray', room: '305' },
+                '1': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' },
                 '2': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
-                '3': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '206' },
-                '4': { subject: 'Biology', class: '11BIOD', teacher: 'D. Gove', room: '403' }
+                '3': { subject: 'Music 2', class: '12MUS2E', teacher: 'C. Mok', room: '206' },
+                '4': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' }
             },
             Wednesday: {
-                '1': { subject: 'Maths Extension 1', class: '11MAEG', teacher: 'K. Guan', room: '301' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
-                '3': { subject: 'Biology', class: '11BIOD', teacher: 'D. Gove', room: '403' },
-                '4': { subject: 'English Extension', class: '11ENEXC', teacher: 'R. Strauss', room: '211' }
+                '1': { subject: 'Maths Extension 1', class: '12MAEG', teacher: 'K. Guan', room: '301' },
+                '2': { subject: 'Maths Adv + Ext', class: '12MAG', teacher: 'K. Guan', room: '301' },
+                '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
+                '4': { subject: 'English Extension', class: '12ENEXC', teacher: 'R. Strauss', room: '211' }
             },
             Thursday: {
-                '1': { subject: 'Biology', class: '11BIOD', teacher: 'D. Gove', room: '403' },
-                '2': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '206' },
-                '3': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
-                '4': { subject: 'English Advanced', class: '11ENKB', teacher: 'M. Shonoda', room: '201' }
+                '1': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
+                '2': { subject: 'Music 2', class: '12MUS2E', teacher: 'C. Mok', room: '206' },
+                '3': { subject: 'Maths Adv + Ext', class: '12MAG', teacher: 'K. Guan', room: '301' },
+                '4': { subject: 'English Advanced', class: '12ENKB', teacher: 'M. Shonoda', room: '201' },
+                '5': { subject: 'Maths Extension 2', class: '12MXXM', teacher: 'K. Murray', room: '305' }
             },
             Friday: {
-                '1': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '2': { subject: 'English Advanced', class: '11ENKB', teacher: 'M. Shonoda', room: '201' },
-                '3': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
-                '4': { subject: 'Building Strength', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo' }
+                '1': { subject: 'Chemistry', class: '12CHEMF', teacher: 'D. Li', room: '401' },
+                '2': { subject: 'English Advanced', class: '12ENKB', teacher: 'M. Shonoda', room: '201' },
+                '3': { subject: 'Maths Adv + Ext', class: '12MAG', teacher: 'K. Guan', room: '301' },
+                '4': { subject: 'Music Extension', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo' }
             }
         },
         B: {
@@ -331,22 +324,24 @@ const timetableData = {
                 '4': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '101' }
             },
             Tuesday: {
+                '0': { subject: 'Maths Extension 2', class: '12MXXM', teacher: 'K. Murray', room: '305' },
                 '1': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
                 '2': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
                 '3': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '101' },
-                '4': { subject: 'Biology', class: '11BIOD', teacher: 'D. Gove', room: '403' }
+                '4': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' }
             },
             Wednesday: {
                 '1': { subject: 'Maths Extension 1', class: '11MAEG', teacher: 'K. Guan', room: '301' },
                 '2': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
-                '3': { subject: 'Biology', class: '11BIOD', teacher: 'D. Gove', room: '403' },
+                '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
                 '4': { subject: 'English Advanced', class: '11ENKB', teacher: 'M. Shonoda', room: '201' }
             },
             Thursday: {
                 '1': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '206' },
                 '2': { subject: 'Chemistry', class: '11CHEMF', teacher: 'D. Li', room: '401' },
-                '3': { subject: 'Biology', class: '11BIOD', teacher: 'D. Gove', room: '403' },
-                '4': { subject: 'Maths Extension 1', class: '11MAEG', teacher: 'K. Guan', room: '301' }
+                '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
+                '4': { subject: 'Maths Extension 1', class: '11MAEG', teacher: 'K. Guan', room: '301' },
+                '5': { subject: 'Maths Extension 2', class: '12MXXM', teacher: 'K. Murray', room: '305' }
             },
             Friday: {
                 '1': { subject: 'English Advanced', class: '11ENKB', teacher: 'M. Shonoda', room: '201' },
@@ -368,16 +363,16 @@ const timetableData = {
                 '1': { subject: 'Legal Studies', class: '11LSF', teacher: 'M. Harkin', room: '309' },
                 '2': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' },
                 '3': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '206' },
-                '4': { subject: 'Geography Accelerated', class: '11AccGEOGD', teacher: 'V. Viner', room: '307' }
+                '4': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' }
             },
             Wednesday: {
                 '1': { subject: 'Maths Extension 1', class: '11MAES', teacher: 'L. Sztajer', room: '304' },
                 '2': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304' },
-                '3': { subject: 'Geography Accelerated', class: '11AccGEOGD', teacher: 'V. Viner', room: '307' },
+                '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
                 '4': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' }
             },
             Thursday: {
-                '1': { subject: 'Geography Accelerated', class: '11AccGEOGD', teacher: 'V. Viner', room: '216' },
+                '1': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
                 '2': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '206' },
                 '3': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304' },
                 '4': { subject: 'English Advanced', class: '11ENKE', teacher: 'M. Carroll', room: '311' }
@@ -386,7 +381,7 @@ const timetableData = {
                 '1': { subject: 'Legal Studies', class: '11LSF', teacher: 'M. Harkin', room: '309' },
                 '2': { subject: 'English Advanced', class: '11ENKE', teacher: 'M. Carroll', room: '311' },
                 '3': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304'  },
-                '4': { subject: 'Building Strength', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo' }
+                '4': { subject: 'Music Extension', class: '', teacher: '', room: ''  }
             }
         },
         B: {
@@ -400,18 +395,18 @@ const timetableData = {
                 '1': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' },
                 '2': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304' },
                 '3': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '101' },
-                '4': { subject: 'Geography Accelerated', class: '11AccGEOGD', teacher: 'V. Viner', room: '216' }
+                '4': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' }
             },
             Wednesday: {
                 '1': { subject: 'Maths Extension 1', class: '11MAES', teacher: 'L. Sztajer', room: '304' },
                 '2': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304' },
-                '3': { subject: 'Geography Accelerated', class: '11AccGEOGD', teacher: 'V. Viner', room: '307' },
+                '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
                 '4': { subject: 'English Advanced', class: '11ENKE', teacher: 'M. Carroll', room: '312' }
             },
             Thursday: {
                 '1': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '206' },
                 '2': { subject: 'Legal Studies', class: '11LSF', teacher: 'M. Harkin', room: '309' },
-                '3': { subject: 'Geography Accelerated', class: '11AccGEOGD', teacher: 'V. Viner', room: '306' },
+                '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
                 '4': { subject: 'Maths Extension 1', class: '11MAES', teacher: 'L. Sztajer', room: '304' }
             },
             Friday: {
@@ -425,66 +420,65 @@ const timetableData = {
     'Nina': {
         A: {
             Monday: {
-                '1': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' },
-                '2': { subject: 'Biology', class: '11BIOC', teacher: 'C. Yu', room: '404' },
-                '3': { subject: 'Physics', class: '11PHYF', teacher: 'R. Barr', room: '103' },
-                '4': { subject: 'Chemistry', class: '11CHEME', teacher: 'J. Jeong', room: '401' }
+                '1': { subject: 'English Advanced', class: '12ENKD', teacher: 'J. Leonard', room: '208' },
+                '2': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
+                '3': { subject: 'Physics', class: '12PHYF', teacher: 'R. Barr', room: '103' },
+                '4': { subject: 'Chemistry', class: '12CHEME', teacher: 'J. Jeong', room: '401' }
             },
             Tuesday: {
-                '1': { subject: 'Physics', class: '11PHYF', teacher: 'R. Barr', room: '103' },
-                '2': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' },
-                '3': { subject: 'Chemistry', class: '11CHEME', teacher: 'J. Jeong', room: '401' },
-                '4': { subject: 'HSC Software Engineering', class: '11AccSED', teacher: 'G. Horan', room: '212' }
+                '0': { subject: 'Maths Extension 2', class: '12MXXM', teacher: 'K. Murray', room: '305' },
+                '1': { subject: 'Physics', class: '12PHYF', teacher: 'R. Barr', room: '103' },
+                '2': { subject: 'Study', teacher: 'H. Cleary', room: '201' },
+                '3': { subject: 'Chemistry', class: '12CHEME', teacher: 'J. Jeong', room: '401' }
             },
             Wednesday: {
-                '1': { subject: 'Maths Extension 1', class: '11MAEG', teacher: 'K. Guan', room: '301' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
-                '3': { subject: 'HSC Software Engineering', class: '11AccSED', teacher: 'G. Horan', room: '212' },
-                '4': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' }
+                '1': { subject: 'Maths Extension 1', class: '12MAEG', teacher: 'K. Guan', room: '301' },
+                '2': { subject: 'Maths Adv + Ext', class: '12MAG', teacher: 'K. Guan', room: '301' },
+                '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' }
             },
             Thursday: {
-                '1': { subject: 'HSC Software Engineering', class: '11AccSED', teacher: 'G. Horan', room: '212' },
-                '2': { subject: 'Chemistry', class: '11CHEME', teacher: 'J. Jeong', room: '401' },
-                '3': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
-                '4': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' }
+                '2': { subject: 'Chemistry', class: '12CHEME', teacher: 'J. Jeong', room: '401' },
+                '3': { subject: 'Maths Adv + Ext', class: '12MAG', teacher: 'K. Guan', room: '301' },
+                '4': { subject: 'English Advanced', class: '12ENKD', teacher: 'J. Leonard', room: '208' },
+                '5': { subject: 'Maths Extension 2', class: '12MXXM', teacher: 'K. Murray', room: '305' }
             },
             Friday: {
-                '1': { subject: 'Physics', class: '11PHYF', teacher: 'R. Barr', room: '103' },
-                '2': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' },
-                '3': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
-                '4': { subject: 'Building Strength', class: '11BU1', teacher: 'K. Moss, I. Pozzolungo' }
+                '1': { subject: 'Physics', class: '12PHYF', teacher: 'R. Barr', room: '103' },
+                '2': { subject: 'English Advanced', class: '12ENKD', teacher: 'J. Leonard', room: '208' },
+                '3': { subject: 'Maths Adv + Ext', class: '12MAG', teacher: 'K. Guan', room: '301' }
             }
         },
         B: {
             Monday: {
-                '1': { subject: 'Physics', class: '11PHYF', teacher: 'R. Barr', room: '103' },
-                '2': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' },
-                '3': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' },
-                '4': { subject: 'Chemistry', class: '11CHEME', teacher: 'J. Jeong', room: '401' }
+                '1': { subject: 'Physics', class: '12PHYF', teacher: 'R. Barr', room: '103' },
+                '2': { subject: 'English Advanced', class: '12ENKD', teacher: 'J. Leonard', room: '208' },
+                '3': { subject: 'Study', teacher: 'H. Cleary', room: '204' },
+                '4': { subject: 'Chemistry', class: '12CHEME', teacher: 'J. Jeong', room: '401' }
             },
             Tuesday: {
-                '1': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
-                '3': { subject: 'Chemistry', class: '11CHEME', teacher: 'J. Jeong', room: '401' },
-                '4': { subject: 'HSC Software Engineering', class: '11AccSED', teacher: 'G. Horan', room: '212' }
+                '0': { subject: 'Maths Extension 2', class: '12BIOC', teacher: 'K. Murray', room: '305' },
+                '1': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
+                '2': { subject: 'Maths Adv + Ext', class: '12MAG', teacher: 'K. Guan', room: '301' },
+                '3': { subject: 'Chemistry', class: '12CHEME', teacher: 'J. Jeong', room: '401' }
             },
             Wednesday: {
-                '1': { subject: 'Maths Extension 1', class: '11MAEG', teacher: 'K. Guan', room: '301' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
+                '1': { subject: 'Maths Extension 1', class: '12MAEG', teacher: 'K. Guan', room: '301' },
+                '2': { subject: 'Maths Adv + Ext', class: '12MAG', teacher: 'K. Guan', room: '301' },
                 '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
-                '4': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' }
+                '4': { subject: 'English Advanced', class: '12ENKD', teacher: 'J. Leonard', room: '208' }
             },
             Thursday: {
-                '1': { subject: 'Chemistry', class: '11CHEME', teacher: 'J. Jeong', room: '401' },
-                '2': { subject: 'Physics', class: '11PHYF', teacher: 'R. Barr', room: '103' },
-                '3': { subject: 'HSC Software Engineering', class: '11AccSED', teacher: 'G. Horan', room: '212' },
-                '4': { subject: 'Maths Extension 1', class: '11MAEG', teacher: 'K. Guan', room: '301' }
+                '1': { subject: 'Chemistry', class: '12CHEME', teacher: 'J. Jeong', room: '401' },
+                '2': { subject: 'Physics', class: '12PHYF', teacher: 'R. Barr', room: '103' },
+                '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
+                '4': { subject: 'Maths Extension 1', class: '12MAEG', teacher: 'K. Guan', room: '301' },
+                '5': { subject: 'Maths Extension 2', class: '12MXXM', teacher: 'K. Murray', room: '305' }
             },
             Friday: {
-                '1': { subject: 'English Advanced', class: '11ENKD', teacher: 'J. Leonard', room: '216' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAG', teacher: 'K. Guan', room: '301' },
-                '3': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' },
-                '4': { subject: 'Physics', class: '11PHYF', teacher: 'R. Barr', room: '103' }
+                '1': { subject: 'English Advanced', class: '12ENKD', teacher: 'J. Leonard', room: '208' },
+                '2': { subject: 'Maths Adv + Ext', class: '12MAG', teacher: 'K. Guan', room: '301' },
+                '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
+                '4': { subject: 'Physics', class: '12PHYF', teacher: 'R. Barr', room: '103' }
             }
         }
     }
@@ -672,8 +666,8 @@ function updatePeriodSelect() {
             timetableData[student]?.[selectedWeek]?.[selectedDay]?.[period]
         );
         
-        // Allow periods 1, 2, 3, 4 even if free, but only show 0 and 5 if they have classes
-        if (hasClassInPeriod || ['1', '2', '3', '4'].includes(period)) {
+        // Allow periods 2, 3 even if free, but only show 0, 1, 4 and 5 if they have classes
+        if (hasClassInPeriod || ['2', '3'].includes(period)) {
             const option = document.createElement('option');
             option.value = period;
             option.textContent = `Period ${period}`;
