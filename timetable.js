@@ -12,6 +12,8 @@ const subjectColors = {
     'Visual Arts': '#ffbbdb',
     'Music 2': '#fcbbf4',
     'Music Extension': '#fcbbf4',
+    'Senior Choir': '#fcbbf4',
+    'Symphony Orchestra': '#fcbbf4',
     'Textiles and Design': '#e9bbfc',
     'Chemistry': '#bbd2fc',
     'Physics': '#b7f5ed',
@@ -20,7 +22,9 @@ const subjectColors = {
     'English Extension': '#fce0bb',
     'English Extension 2': '#fce0bb',
     'Economics': '#7cd3c3',
-    'Modern History': '#ede2d8'
+    'Modern History': '#ede2d8',
+    'Study': '#dcdcdc',
+    'Prefect Meeting': '#dcdcdc'
 };
 
 // Timetable data
