@@ -20,7 +20,6 @@ const subjectColors = {
     'English Extension': '#fce0bb',
     'English Extension 2': '#fce0bb',
     'Economics': '#7cd3c3',
-    'Legal Studies': '#8eaeeb',
     'Modern History': '#ede2d8'
 };
 
@@ -354,66 +353,67 @@ const timetableData = {
     'Grace': {
         A: {
             Monday: {
-                '1': { subject: 'English Advanced', class: '11ENKE', teacher: 'M. Carroll', room: '311' },
-                '2': { subject: 'Biology', class: '11BIOC', teacher: 'C. Yu', room: '404' },
-                '3': { subject: 'Legal Studies', class: '11LSF', teacher: 'M. Harkin', room: '309' },
-                '4': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '101' }
+                '0': { subject: 'Prefect Meeting'},
+                '1': { subject: 'English Advanced', class: '12ENKE', teacher: 'M. Cox', room: '306' },
+                '2': { subject: 'Biology', class: '12BIOC', teacher: 'M. Allen-Scott', room: '404' },
+                '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
+                '4': { subject: 'Music 2', class: '12MUS2E', teacher: 'C. Mok', room: '101' }
             },
             Tuesday: {
-                '1': { subject: 'Legal Studies', class: '11LSF', teacher: 'M. Harkin', room: '309' },
-                '2': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' },
-                '3': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '206' },
-                '4': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' }
+                '2': { subject: 'Biology', class: '12BIOC', teacher: 'M. Allen-Scott', room: '404' },
+                '3': { subject: 'Music 2', class: '12MUS2E', teacher: 'C. Mok', room: '206' }
             },
             Wednesday: {
-                '1': { subject: 'Maths Extension 1', class: '11MAES', teacher: 'L. Sztajer', room: '304' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304' },
+                '1': { subject: 'Maths Extension 1', class: '12MAES', teacher: 'L. Sztajer', room: '304' },
+                '2': { subject: 'Maths Adv + Ext', class: '12MAS', teacher: 'L. Sztajer', room: '304' },
                 '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
-                '4': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' }
+                '4': { subject: 'Biology', class: '12BIOC', teacher: 'M. Allen-Scott', room: '404' },
+                '5': { subject: 'Symphony Orchestra', room: 'CLC' }
             },
             Thursday: {
-                '1': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
-                '2': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '206' },
-                '3': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304' },
-                '4': { subject: 'English Advanced', class: '11ENKE', teacher: 'M. Carroll', room: '311' }
+                '2': { subject: 'Music 2', class: '12MUS2E', teacher: 'C. Mok', room: '206' },
+                '3': { subject: 'Maths Adv + Ext', class: '12MAS', teacher: 'L. Sztajer', room: '304' },
+                '4': { subject: 'English Advanced', class: '12ENKE', teacher: 'M. Carroll', room: '311' }
             },
             Friday: {
-                '1': { subject: 'Legal Studies', class: '11LSF', teacher: 'M. Harkin', room: '309' },
-                '2': { subject: 'English Advanced', class: '11ENKE', teacher: 'M. Carroll', room: '311' },
-                '3': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304'  },
-                '4': { subject: 'Music Extension', class: '', teacher: '', room: ''  }
+                '0': { subject: 'Senior Choir', room: '101' },
+                '1': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
+                '2': { subject: 'English Advanced', class: '12ENKE', teacher: 'M. Cox', room: '306' },
+                '3': { subject: 'Maths Adv + Ext', class: '12MAS', teacher: 'L. Sztajer', room: '304'  },
+                '4': { subject: 'Music Extension', class: '12MUEX', teacher: 'S. Sutcliffe', room: '206'  }
             }
         },
         B: {
             Monday: {
-                '1': { subject: 'Legal Studies', class: '11LSF', teacher: 'M. Harkin', room: '309' },
-                '2': { subject: 'English Advanced', class: '11ENKE', teacher: 'M. Carroll', room: '311' },
-                '3': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' },
-                '4': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '101' }
+                '0': { subject: 'Prefect Meeting'},
+                '1': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
+                '2': { subject: 'English Advanced', class: '12ENKE', teacher: 'M. Cox', room: '306' },
+                '3': { subject: 'Biology', class: '12BIOC', teacher: 'M. Allen-Scott', room: '404' },
+                '4': { subject: 'Music 2', class: '12MUS2E', teacher: 'C. Mok', room: '101' }
             },
             Tuesday: {
-                '1': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304' },
-                '3': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '101' },
-                '4': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' }
+                '1': { subject: 'Biology', class: '12BIOC', teacher: 'M. Allen-Scott', room: '404' },
+                '2': { subject: 'Maths Adv + Ext', class: '12MAS', teacher: 'L. Sztajer', room: '304' },
+                '3': { subject: 'Music 2', class: '12MUS2E', teacher: 'C. Mok', room: '101' }
             },
             Wednesday: {
-                '1': { subject: 'Maths Extension 1', class: '11MAES', teacher: 'L. Sztajer', room: '304' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304' },
+                '1': { subject: 'Maths Extension 1', class: '12MAES', teacher: 'L. Sztajer', room: '304' },
+                '2': { subject: 'Maths Adv + Ext', class: '12MAS', teacher: 'L. Sztajer', room: '304' },
                 '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
-                '4': { subject: 'English Advanced', class: '11ENKE', teacher: 'M. Carroll', room: '312' }
+                '4': { subject: 'English Advanced', class: '12ENKE', teacher: 'M. Carroll', room: '312' },
+                '5': { subject: 'Symphony Orchestra', room: 'CLC' }
             },
             Thursday: {
-                '1': { subject: 'Music 2', class: '11MUS2E', teacher: 'C. Mok', room: '206' },
-                '2': { subject: 'Legal Studies', class: '11LSF', teacher: 'M. Harkin', room: '309' },
+                '1': { subject: 'Music 2', class: '12MUS2E', teacher: 'C. Mok', room: '206' },
+                '2': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
                 '3': { subject: 'Study', teacher: 'H. Cleary', room: 'Library' },
-                '4': { subject: 'Maths Extension 1', class: '11MAES', teacher: 'L. Sztajer', room: '304' }
+                '4': { subject: 'Maths Extension 1', class: '12MAES', teacher: 'L. Sztajer', room: '304' }
             },
             Friday: {
-                '1': { subject: 'English Advanced', class: '11ENKE', teacher: 'M. Carroll', room: '311' },
-                '2': { subject: 'Maths Adv + Ext', class: '11MAS', teacher: 'L. Sztajer', room: '304' },
-                '3': { subject: 'Biology', class: '11BIOC', teacher: 'M. Allen-Scott', room: '404' },
-                '4': { subject: 'Legal Studies', class: '11LSF', teacher: 'M. Harkin', room: '309' }
+                '0': { subject: 'Senior Choir', room: '101' },
+                '1': { subject: 'English Advanced', class: '12ENKE', teacher: 'M. Cox', room: '306' },
+                '2': { subject: 'Maths Adv + Ext', class: '12MAS', teacher: 'L. Sztajer', room: '304' },
+                '3': { subject: 'Biology', class: '12BIOC', teacher: 'M. Allen-Scott', room: '404' }
             }
         }
     },
