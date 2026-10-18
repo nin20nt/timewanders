@@ -23,7 +23,6 @@ const subjectColors = {
     'English Extension 2': '#fce0bb',
     'Economics': '#7cd3c3',
     'Modern History': '#ede2d8',
-    'Study': '#dcdcdc',
     'Prefect Meeting': '#dcdcdc'
 };
 
